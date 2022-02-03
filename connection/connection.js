@@ -6,7 +6,7 @@ const {
   MONGO_PORT,
 } = require("../config/config");
 
-const mongoURL = `mongodb://hamzaejj:hyui@mongo:27017/?authSource=admin`;
+const mongoURL = `mongodb://hamzaejj:hyui@mongo:27017/hotel-booking?authSource=admin`;
 
 async function connect() {
   await mongoose.connect(mongoURL, {
